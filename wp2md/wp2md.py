@@ -536,7 +536,10 @@ def dump(file_name, data, order):
                 comments = generate_comments(extras.get('comments', []))
                 extras = filter(None, [excerpt, content, comments])
                 f.acp#onPopupPost()
-                f.write('---\n' + '---\n\n'.join(extras))
+                f.acp#onPopupPost()
+                f.write("---")
+                f.write('\n' + '\n\n'.join(extras))
+                f.write("---")
 
     except Exception as e:
         log.error("Error saving data to '%s'" % (file_name))
