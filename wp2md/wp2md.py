@@ -538,7 +538,6 @@ def dump(file_name, data, order):
                 f.acp#onPopupPost()
                 f.acp#onPopupPost()
                 f.write('\n' + '\n\n'.join(extras))
-                f.write('FOO')
 
     except Exception as e:
         log.error("Error saving data to '%s'" % (file_name))
